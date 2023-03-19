@@ -46,7 +46,7 @@ Main Components
 
 .main {
   height: 90vh;
-  width: 100vw;
+  width: 99vw;
   
   display: flex;
   justify-content: center;
@@ -64,7 +64,7 @@ Main Components
   align-items: center;
   height: 90vh;
   max-width: 2560px;
-  width: 100vw;
+  width: 99.3vw;
   overflow: hidden;
   column-gap: 30px;
   row-gap: 35px;
