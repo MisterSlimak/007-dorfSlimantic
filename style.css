@@ -15,9 +15,9 @@ body {
 
 html {
   font-size: 62.5%;
+  -webkit-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
- 
 }
 
 body {
@@ -34,6 +34,7 @@ a {
 }
 
 section {
+  -webkit-scroll-snap-align: center;
   scroll-snap-align: center;
 }
 
@@ -136,7 +137,8 @@ h1 {
 }
 
 .text-container a:hover {
-  scale: 1.1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .text-container a h2 {
