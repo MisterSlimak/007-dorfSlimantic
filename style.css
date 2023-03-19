@@ -67,6 +67,7 @@ Main Components
   width: 100vw;
   overflow: hidden;
   column-gap: 30px;
+  row-gap: 35px;
 }
 
 .graphic-container .grid-box {
