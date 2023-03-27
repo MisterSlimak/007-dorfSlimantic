@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+
 body {
     height: fit-content;
     padding: 0;
@@ -15,8 +16,7 @@ body {
 
 html {
   font-size: 62.5%;
-  -webkit-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y proximity; */
   scroll-behavior: smooth;
 }
 
@@ -65,7 +65,7 @@ Main Components
   align-items: center;
   height: 90vh;
   max-width: 2560px;
-  width: 99.3vw;
+  width: 99vw;
   overflow: hidden;
   column-gap: 30px;
   row-gap: 35px;
@@ -184,6 +184,10 @@ h1 {
 h1 {
   text-align: center;
   font-size: 4rem;
+}
+
+.cd-horizontal-timeline h1 {
+  margin-bottom: 0;
 }
 
 .cd-horizontal-timeline::before {
@@ -411,7 +415,6 @@ h1 {
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 2em 0;
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -506,7 +509,7 @@ h1 {
   
 }
 @media only screen and (max-width: 768px) {
-  img {
+  .main img {
     width: 80vw;
   }
   
@@ -801,7 +804,7 @@ body .footer .content {
   max-width: fit-content;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 5.5rem;
   color: #fff;
 }
@@ -814,6 +817,13 @@ footer .content h2 {
 footer .content span {
   font-size: 1.4rem;
 }
+
+.footer__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .footer__title {
   text-align: start;
@@ -932,10 +942,50 @@ footer .content span {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 3.5rem;
   }
+
+  html {
+    width: fit-content;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  h2 {
+    font-size: 1.75rem !important;
+  }
 }
 
 .not-ready {
+  display: flex;
   color: gray;
   text-decoration: none;
   cursor: not-allowed;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacts-container > p {
+  margin: 0 1rem 0 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contacts {
+  padding: 1rem 0 0 0;
+  position: relative;
+}
+
+.contact-label {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.25rem 0;
+}
+
+.contact-label p {
+  padding: 0 0 0 0.25rem;
 }
