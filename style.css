@@ -973,7 +973,7 @@ footer .content span {
 
 .not-ready {
   display: flex;
-  color: gray;
+  color: rgb(163, 163, 163);
   text-decoration: none;
   cursor: not-allowed;
 }
